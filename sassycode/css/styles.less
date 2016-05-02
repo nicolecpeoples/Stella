@@ -1,0 +1,453 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,300italic,600,600italic,700italic,700);
+@import url(https://fonts.googleapis.com/css?family=Merienda:400,700);
+/*********** Styles.Less *****/
+/****** colors *******/
+@color1:#fff;
+/*light blue */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  background: #21414a;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.ie8 .container {
+  width: 1000px;
+}
+/*********** Type ***********/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+h1 {
+  font-size: 3em;
+  color: #ffffff;
+  letter-spacing: .01em;
+  margin: 0;
+}
+h2 {
+  color: #333;
+}
+
+h3 {
+
+}
+p {
+  margin: 10px 0;
+  color: #ffffff;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a.active,
+a:hover,
+a:visited {
+  color: #9fb8d9;
+}
+/*********** Header ***********/
+#masthead {
+  background: #ffffff;
+
+  button i.fa {
+  	font-size: 3em;
+  }
+}
+#masthead .container {
+  max-width: 810px;
+}
+
+	.about-me {
+		display: block;
+		margin: 0 0 10px;
+
+		img {
+			max-width: 100px;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+a.logo {
+  max-width: 240px;
+  margin: 18px auto 4px;
+  display: block;
+}
+
+.social {
+  text-align: center;
+  margin: 0 0 7px;
+}
+.social a {
+  width: 50px ;
+  height: 50px;
+  display: inline-block;
+  margin: 0 5px;
+}
+.social .social-facebook {
+  background: url(../images/social/facebook.png);
+}
+.social .social-github {
+  background: url(../images/social/github.png);
+}
+.social .social-linkedin {
+  background: url(../images/social/linkedin.png);
+}
+.social .social-twitter {
+  background: url(../images/social/twitter.png);
+}
+.social a:hover {
+  transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+  -moz-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  opacity: .7;
+}
+/*********** Banner ***********/
+#banner {
+  background: url(../images/dark-wood.jpg);
+  background-position: top center;
+  padding: 30px;
+}
+#banner .container {
+  max-width: 810px;
+}
+#banner .content-wrap {
+  background: #e7d2bf;
+  overflow: hidden;
+  padding: 16px;
+}
+#banner p {
+  max-width: 380px;
+  color: #333;
+  font-size: .8em;
+  font-family: 'Merienda', cursive;
+  margin: 10px auto;
+}
+/*********** About ***********/
+#about {
+  position: relative;
+  margin: 0 0 0;
+}
+#about h1 {
+  color: #333333;
+  margin: 60px 0 0 0;
+}
+#about .content-lt {
+  background: url(../images/about/photo.jpg);
+  min-height: 300px;
+  background-size: cover;
+  padding: 64px 0 0 0;
+  box-sizing: border-box;
+}
+#about .content-rt {
+  background: #f3e0dd;
+  text-align: center;
+  padding: 60px 0;
+}
+#about .content-rt h3 {
+  margin: 0;
+}
+#about .content-rt .info {
+  width: 180px;
+  height: 110px;
+  position: relative;
+  background: #21414a;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 10px;
+  padding: 5px 10px;
+}
+#about .content-rt .info ul {
+  margin: 0;
+}
+#about .content-rt .info ul li {
+  list-style: none;
+  color: #fff;
+      font-size: .8em;
+    line-height: 1.2em;
+}
+#about .content-rt .info:before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 40px solid #21414a;
+}
+#about .content-rt .info:after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 40px solid #21414a;
+}
+#about .content-rt p {
+  color: #ffffff;
+  margin: 0;
+}
+
+
+/*********** Projects ***********/
+#projects-section {
+  position: relative;
+  background: url(../images/projects/darkred-wood.jpg);
+  min-height: 300px;
+  overflow: hidden;
+  border-top: 2px solid #ffffff;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 30px 0 30px;
+
+  h2 {
+  	color: @color1;
+  	font-size: 1.4em;
+  	margin: 0 0 11px;
+  }
+  .container {
+  	width: 96%;
+  	margin: 0 auto;
+  }
+
+	.project-item {
+	   	text-align: center;
+	    margin: 10px auto;
+
+	    a {
+		    display: block;
+		    margin: 0 auto;
+		    text-align: center;
+		}
+	}
+ .item-wrap {
+    display: inline-block;
+    border: 3px solid #000;
+    max-height: 275px;
+    overflow: hidden;
+
+
+    img {
+	    max-width: 360px;
+	    margin: 0 auto;
+	}
+}
+.mobile.item-wrap {
+    max-width: 110px;
+}
+
+}
+/*********** Contact ***********/
+#contact-section {
+  background: #000;
+  position: relative;
+  padding: 30px 0 30px;
+}
+#contact-section form {
+  max-width: 450px;
+  margin: 0 auto;
+}
+#contact-section form p {
+  text-align: left;
+}
+#contact-section form input {
+  border: 2px solid #975c53;
+  border-radius: 0;
+  color: gray;
+  width: 100%;
+}
+#contact-section form textarea {
+  border: 2px solid #975c53;
+  border-radius: 0;
+  color: gray;
+  width: 100%;
+}
+#contact-section form input.wpcf7-form-control.wpcf7-submit {
+  text-transform:  uppercase;
+  font-size: 1.3em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: .05em;
+  background: #975c53;
+  padding: 15px;
+  border: none;
+  color: #fff;
+}
+#contact-section form input.wpcf7-form-control.wpcf7-submit:after{
+  content: 'Submit';
+  display: block;
+}
+#contact-section .content-top {
+  background: url(../images/contact/bg-mob.jpg) top center no-repeat;
+  min-height: 400px;
+  display: block;
+  background-size: cover;
+}
+/*********** Contact ***********/
+#ft {
+  border-top: 2px solid #ffffff;
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+#ft .content-txt {
+  width: 96%;
+  margin: 0 auto;
+}
+.site-info {
+  background: #21414a;
+  color: #ffffff;
+  padding: 20px 0 25px;
+}
+.site-info a {
+  color: #ffffff;
+}
+/* ===============================================
+	Small Tablet/Large Phone Stylings (Optional)
+	Supports 30em (480px) to 47.9375em (767px)
+	------
+	Useful for making minor adjustments between
+	awkward sizes.
+	=============================================== */
+/* ===============================================
+Tablet / Desktop Stylings
+Supports 48em (768px) and up
+=============================================== */
+@media screen and (min-width: 48em) {
+#banner {
+	h2, h3 {
+		text-align: left;
+	}
+}
+  #banner .content-lt {
+    width: 46%;
+    margin: 0 2%;
+    float: left;
+  }
+  #banner .content-rt {
+    width: 46%;
+    margin: 0 2%;
+    float: right;
+  }
+  /*********** Projects ***********/
+  /*********** Contact ***********/
+  #contact-section {
+    background: url(../images/contact/bg.jpg) top center no-repeat;
+  }
+  #contact-section .content-top {
+    background: none;
+    min-height: auto;
+  }
+}
+/* ===============================================
+Desktop Only Stylings
+Supports 64em (1024px) and up
+=============================================== */
+@media screen and (min-width: 54em) {
+  /*********** About ***********/
+  #about {
+    overflow: hidden;
+    background: url(../images/about/bg-dt.jpg) top center no-repeat;
+  }
+  #about .content-wrap {
+    overflow: hidden;
+  }
+  #about .content-lt {
+    background: none;
+    float: left;
+    width: 50%;
+    padding: 187px 0 0 0;
+  }
+  #about .content-rt {
+    background: none;
+    float: right;
+    width: 50%;
+    padding: 40px 0;
+  }
+}
+/* ===============================================
+Desktop Only Stylings
+Supports 64em (1024px) and up
+=============================================== */
+@media screen and (min-width: 64em) {
+  #masthead {
+    background: none;
+    position: relative;
+    z-index: 200;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  #masthead a.logo {
+    margin: 160px auto 0;
+  }
+  #masthead.small {
+    background: #39464c;
+    background: rgba(33, 65, 74, 0.8);
+  }
+  #masthead.small a.logo {
+    margin: 10px auto 0;
+  }
+
+  	.about-me {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+	}
+  #banner {
+    background: url(../images/banner.jpg) top center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 880px;
+  }
+  #banner .content-wrap {
+    background: none;
+    margin: 360px 0 0 0;
+  }
+  /*********** About ***********/
+  #about {
+    margin: 805px 0 0 0;
+  }
+  /*********** Projects ***********/
+  #projects-section {
+  		.project-item {
+  			 max-width: 50%;
+	  		display: inline-block;
+	  		margin: 10px 4px;
+	}
+  }
+  /*********** Contact ***********/
+}
